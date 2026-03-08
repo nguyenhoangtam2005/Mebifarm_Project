@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhÃ¢n tÃ­ch doanh thu - MobiFarm CTV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/revenue-performance-analytics-styles.css" />
+</head>
+<body>
+  <main class="revenue-page">
+    <header class="revenue-header">
+      <button class="header-back" id="revenueBackBtn" type="button" aria-label="Quay láº¡i">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <h1>PhÃ¢n tÃ­ch doanh thu</h1>
+    </header>
+
+    <section class="goal-card">
+      <p class="goal-chip">Cá»™ng tÃ¡c viÃªn</p>
+      <h2>TRáº¦N MINH HIáº¾U</h2>
+      <p class="goal-label">Chá»‰ tiÃªu</p>
+      <p class="goal-value">50.000Ä‘ / 100.000Ä‘</p>
+      <div class="goal-track">
+        <span style="width: 50%"></span>
+      </div>
+      <p class="goal-note">HoÃ n thÃ nh chá»‰ tiÃªu Ä‘á»ƒ lÃªn háº¡ng tiáº¿p theo</p>
+    </section>
+
+    <section class="range-row" id="rangeRow">
+      <button class="range-btn active" type="button" data-range="today"><i class="fa-solid fa-check"></i>HÃ´m nay</button>
+      <button class="range-btn" type="button" data-range="7d">7 ngÃ y</button>
+      <button class="range-btn" type="button" data-range="30d">30 ngÃ y</button>
+      <button class="range-btn select" type="button" data-range="custom">TÃ¹y chá»n <i class="fa-solid fa-angle-down"></i></button>
+    </section>
+
+    <section class="metrics-grid">
+      <article class="metric-card">
+        <div class="metric-head">
+          <h3>Hoa há»“ng theo cáº¥p báº­c</h3>
+          <span class="metric-ico purple"><i class="fa-solid fa-link"></i></span>
+        </div>
+        <p class="metric-main accent-purple">1%</p>
+      </article>
+
+      <article class="metric-card">
+        <div class="metric-head">
+          <h3>Tá»· lá»‡ hoÃ n tráº£ hÃ ng</h3>
+          <span class="metric-ico amber"><i class="fa-solid fa-rotate-left"></i></span>
+        </div>
+        <p class="metric-main accent-amber">5%</p>
+        <p class="metric-sub"><span class="chip-down">~ 8.5%</span> so vá»›i thÃ¡ng trÆ°á»›c</p>
+      </article>
+
+      <article class="metric-card">
+        <div class="metric-head">
+          <h3>Tá»•ng hoa há»“ng kiáº¿m Ä‘Æ°á»£c</h3>
+          <span class="metric-ico rose"><i class="fa-solid fa-piggy-bank"></i></span>
+        </div>
+        <p class="metric-main accent-red">5.381.128Ä‘</p>
+        <p class="metric-sub"><span class="chip-up">~ 8.5%</span> so vá»›i thÃ¡ng trÆ°á»›c</p>
+      </article>
+
+      <article class="metric-card">
+        <div class="metric-head">
+          <h3>Tá»•ng Ä‘Æ¡n hÃ ng</h3>
+          <span class="metric-ico orange"><i class="fa-solid fa-cube"></i></span>
+        </div>
+        <p class="metric-main accent-orange">134</p>
+        <p class="metric-sub"><span class="chip-down">~ 8.5%</span> so vá»›i thÃ¡ng trÆ°á»›c</p>
+      </article>
+
+      <article class="metric-card">
+        <div class="metric-head">
+          <h3>Tá»•ng sá»‘ lÆ°á»£t xem sáº£n pháº©m</h3>
+          <span class="metric-ico pink"><i class="fa-solid fa-location-arrow"></i></span>
+        </div>
+        <p class="metric-main accent-pink">134</p>
+        <p class="metric-sub"><span class="chip-up">~ 8.5%</span> so vá»›i thÃ¡ng trÆ°á»›c</p>
+      </article>
+    </section>
+
+    <section class="chart-card">
+      <h3>Hoa há»“ng kiáº¿m Ä‘Æ°á»£c tá»« cÃ¡c Ä‘Æ¡n hÃ ng</h3>
+      <div class="bars">
+        <div class="bar-wrap"><span style="height: 78%"></span><p>ThÃ¡ng 1</p></div>
+        <div class="bar-wrap"><span style="height: 22%"></span><p>ThÃ¡ng 2</p></div>
+        <div class="bar-wrap"><span style="height: 60%"></span><p>ThÃ¡ng 3</p></div>
+        <div class="bar-wrap"><span style="height: 36%"></span><p>ThÃ¡ng 4</p></div>
+      </div>
+    </section>
+
+    <section class="chart-card">
+      <h3>Top sáº£n pháº©m bÃ¡n cháº¡y nháº¥t</h3>
+      <div class="top-list">
+        <div class="top-item"><p>Trá»©ng gÃ  PinkyEgg 12 trá»©ng</p><span><b style="width: 82%"></b></span></div>
+        <div class="top-item"><p>ThÃ¹ng trá»©ng gÃ  PinkyEgg 30 trá»©ng</p><span><b style="width: 94%"></b></span></div>
+        <div class="top-item"><p>Trá»©ng gÃ  PinkyEgg 24 trá»©ng</p><span><b style="width: 88%"></b></span></div>
+        <div class="top-item"><p>Khay trá»©ng gÃ  PinkyEgg 12 trá»©ng</p><span><b style="width: 97%"></b></span></div>
+        <div class="top-item"><p>Trá»©ng gÃ  PinkyEgg 8 trá»©ng</p><span><b style="width: 90%"></b></span></div>
+      </div>
+      <div class="axis-row"><span>0</span><span>500</span></div>
+    </section>
+
+    <section class="chart-card">
+      <h3>Tá»•ng Ä‘Æ¡n hÃ ng & Sá»‘ lÆ°á»£ng Ä‘Æ¡n hÃ ng Ä‘á»•i/hoÃ n</h3>
+      <svg class="line-chart" viewBox="0 0 320 220" aria-hidden="true">
+        <line x1="26" y1="180" x2="300" y2="180"></line>
+        <line x1="26" y1="145" x2="300" y2="145"></line>
+        <line x1="26" y1="110" x2="300" y2="110"></line>
+        <line x1="26" y1="75" x2="300" y2="75"></line>
+        <line x1="26" y1="40" x2="300" y2="40"></line>
+        <polyline class="line-purple" points="26,120 60,145 85,165 110,70 145,150 180,100 220,140 265,80 300,55"></polyline>
+        <polyline class="line-green" points="26,95 60,82 85,85 110,125 145,112 180,85 220,40 250,55 300,110"></polyline>
+      </svg>
+      <div class="legend">
+        <span><i class="dot purple"></i> Tá»•ng Ä‘Æ¡n hÃ ng</span>
+        <span><i class="dot green"></i> Sá»‘ lÆ°á»£ng Ä‘Æ¡n hÃ ng Ä‘á»•i/hoÃ n</span>
+      </div>
+    </section>
+
+    <section class="chart-card">
+      <h3>PhÃ¢n bá»‘ vá»‹ trÃ­ khÃ¡ch hÃ ng</h3>
+      <div class="donut-wrap">
+        <div class="donut"></div>
+      </div>
+      <div class="city-legend">
+        <span><i class="dot city-hcm"></i> TP. Há»“ ChÃ­ Minh</span>
+        <span><i class="dot city-hn"></i> TP. HÃ  Ná»™i</span>
+        <span><i class="dot city-dn"></i> ÄÃ  Náºµng</span>
+        <span><i class="dot city-hp"></i> Háº£i PhÃ²ng</span>
+        <span><i class="dot city-ct"></i> Cáº§n ThÆ¡</span>
+        <span><i class="dot city-khac"></i> KhÃ¡c</span>
+      </div>
+    </section>
+  </main>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="./sales-affiliate-dashboard-overview.html" data-tab="home">
+      <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
+      <span class="nav-label">Trang chá»§</span>
+    </a>
+    <a class="active" href="./revenue-performance-analytics-dashboard.html" data-tab="customers">
+      <span class="nav-ico">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <span class="nav-badge">17</span>
+      </span>
+      <span class="nav-label">Doanh thu</span>
+    </a>
+    <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
+      <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
+      <span class="nav-label">ÄÆ¡n hÃ ng</span>
+    </a>
+    <a href="./account-profile-management-center.html" data-tab="account">
+      <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
+      <span class="nav-label">TÃ i khoáº£n</span>
+    </a>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/revenue-analytics-dashboard/page-state-data-store.js"></script>
+  <script src="../assets/scripts/revenue-analytics-dashboard/backend-api-client.js"></script>
+  <script src="../assets/scripts/revenue-analytics-dashboard/business-logic-service.js"></script>
+  <script src="../assets/scripts/revenue-analytics-dashboard/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/revenue-analytics-dashboard/user-event-handlers.js"></script>
+  <script src="../assets/scripts/revenue-analytics-dashboard/page-module-bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

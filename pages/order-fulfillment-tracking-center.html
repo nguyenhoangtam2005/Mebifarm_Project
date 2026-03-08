@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ÄÆ¡n hÃ ng - MobiFarm CTV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/order-fulfillment-tracking-styles.css" />
+</head>
+<body>
+  <main class="orders-page">
+    <header class="orders-header">
+      <button class="header-back" id="ordersBackBtn" type="button" aria-label="Quay láº¡i">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <h1>ÄÆ¡n hÃ ng cá»§a tÃ´i</h1>
+    </header>
+
+    <section class="orders-tabs" id="ordersTabs">
+      <button class="tab-btn active" type="button" data-status="all">Táº¥t cáº£</button>
+      <button class="tab-btn" type="button" data-status="pending">Chá» xÃ¡c nháº­n</button>
+      <button class="tab-btn" type="button" data-status="preparing">Äang soáº¡n</button>
+      <button class="tab-btn" type="button" data-status="cancelled">ÄÃ£ há»§y</button>
+    </section>
+
+    <section class="orders-list" id="ordersList"></section>
+  </main>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="./sales-affiliate-dashboard-overview.html" data-tab="home">
+      <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
+      <span class="nav-label">Trang chá»§</span>
+    </a>
+    <a href="./revenue-performance-analytics-dashboard.html" data-tab="customers">
+      <span class="nav-ico">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <span class="nav-badge">17</span>
+      </span>
+      <span class="nav-label">Doanh thu</span>
+    </a>
+    <a class="active" href="./order-fulfillment-tracking-center.html" data-tab="orders">
+      <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
+      <span class="nav-label">ÄÆ¡n hÃ ng</span>
+    </a>
+    <a href="./account-profile-management-center.html" data-tab="account">
+      <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
+      <span class="nav-label">TÃ i khoáº£n</span>
+    </a>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/order-history-management/page-state-data-store.js"></script>
+  <script src="../assets/scripts/order-history-management/backend-api-client.js"></script>
+  <script src="../assets/scripts/order-history-management/business-logic-service.js"></script>
+  <script src="../assets/scripts/order-history-management/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/order-history-management/user-event-handlers.js"></script>
+  <script src="../assets/scripts/order-history-management/page-module-bootstrap.js"></script>
+</body>
+</html>
+
+
+
+

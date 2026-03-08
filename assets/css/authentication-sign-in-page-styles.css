@@ -1,0 +1,177 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f16322;
+  padding: 16px 10px;
+}
+
+.login-card {
+  position: relative;
+  width: min(420px, 100%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 18px 34px rgba(27, 18, 12, 0.2);
+  padding: 18px 18px 20px;
+}
+
+.close-btn {
+  --icon-line-color: #666;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.brand-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 8px 0 10px;
+}
+
+.brand-logo {
+  display: block;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+}
+
+.login-card h1 {
+  margin: 16px 0 14px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#loginForm label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+#loginForm label span {
+  color: #f25a22;
+}
+
+.label-row {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label-row a {
+  color: #2f7cf8;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.field-wrap {
+  margin-top: 8px;
+  border: 1.5px solid #f25a22;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 30px 1fr 34px;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 10px;
+  gap: 6px;
+}
+
+.field-wrap i {
+  color: #767676;
+  font-size: 16px;
+}
+
+.field-wrap input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #3f3f3f;
+  width: 100%;
+}
+
+.field-wrap input::placeholder {
+  color: #b0b0b0;
+}
+
+.eye-btn {
+  --icon-line-color: #767676;
+  border: none;
+  background: transparent;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.field-error {
+  min-height: 20px;
+  margin: 6px 0 0;
+  color: #f13f35;
+  font-size: 13px;
+}
+
+.field-wrap.has-error {
+  border-color: #f13f35;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #f16322;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.register-text {
+  margin: 14px 0 0;
+  text-align: center;
+  color: #2f2f2f;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #f16322;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .login-card h1 {
+    font-size: 22px;
+  }
+
+  #loginForm label {
+    font-size: 14px;
+  }
+
+  .label-row a,
+  .register-text {
+    font-size: 13px;
+  }
+
+  .field-wrap input {
+    font-size: 15px;
+  }
+}

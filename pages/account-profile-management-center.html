@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tï¿½i kho?n - MobiFarm CTV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/account-profile-management-styles.css" />
+</head>
+<body>
+  <main class="account-page">
+    <div class="account-cover"></div>
+
+    <section class="profile-card">
+      <img class="avatar" src="https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=180&q=80" alt="?nh d?i di?n" />
+      <strong id="accountName">{H? vï¿½ tï¿½n}</strong>
+    </section>
+
+    <section class="panel">
+      <h2>Tï¿½i kho?n</h2>
+      <button class="row-btn" type="button" data-action="profile">
+        <i class="fa-solid fa-circle-user"></i>
+        <span>Thï¿½ng tin cï¿½ nhï¿½n</span>
+      </button>
+      <button class="row-btn" type="button" data-action="platform">
+        <i class="fa-solid fa-globe"></i>
+        <span>N?n t?ng qu?ng bï¿½</span>
+      </button>
+    </section>
+
+    <section class="panel">
+      <h2>Thï¿½ng tin chung</h2>
+      <button class="row-btn" type="button" data-action="faq">
+        <i class="fa-solid fa-circle-question"></i>
+        <span>Cï¿½u h?i thu?ng g?p</span>
+      </button>
+      <button class="row-btn" type="button" data-action="terms">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>ï¿½i?u kho?n & D?ch v?</span>
+      </button>
+    </section>
+
+    <button class="logout-btn" id="logoutBtn" type="button">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      <span>ï¿½ang xu?t</span>
+    </button>
+  </main>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="./sales-affiliate-dashboard-overview.html" data-tab="home">
+      <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
+      <span class="nav-label">Trang ch?</span>
+    </a>
+    <a href="./revenue-performance-analytics-dashboard.html" data-tab="customers">
+      <span class="nav-ico">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <span class="nav-badge">17</span>
+      </span>
+      <span class="nav-label">Doanh thu</span>
+    </a>
+    <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
+      <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
+      <span class="nav-label">ï¿½on hï¿½ng</span>
+    </a>
+    <a class="active" href="./account-profile-management-center.html" data-tab="account">
+      <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
+      <span class="nav-label">Tï¿½i kho?n</span>
+    </a>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/account-profile-management/page-state-data-store.js"></script>
+  <script src="../assets/scripts/account-profile-management/backend-api-client.js"></script>
+  <script src="../assets/scripts/account-profile-management/business-logic-service.js"></script>
+  <script src="../assets/scripts/account-profile-management/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/account-profile-management/user-event-handlers.js"></script>
+  <script src="../assets/scripts/account-profile-management/page-module-bootstrap.js"></script>
+</body>
+</html>
+
+
+

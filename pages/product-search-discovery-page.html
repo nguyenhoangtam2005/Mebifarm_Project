@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tìm ki?m s?n ph?m - MobiFarm CTV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/product-search-discovery-page-styles.css" />
+</head>
+<body>
+  <main class="search-page">
+    <header class="search-header">
+      <button class="back-btn" id="searchBackBtn" type="button" aria-label="Quay l?i">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <form id="searchPageForm" class="search-form">
+        <label class="search-input-wrap" for="searchPageInput">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="searchPageInput" type="search" placeholder="Tìm s?n ph?m" />
+        </label>
+      </form>
+    </header>
+
+    <section class="result-head">
+      <p id="resultSummary"></p>
+    </section>
+
+    <section class="tool-row" id="toolRow">
+      <button class="tool-chip active" type="button" data-sort="best">
+        <i class="fa-solid fa-sliders"></i>
+        B? l?c
+      </button>
+      <button class="tool-chip outline active" type="button" data-sort="best">Bán ch?y</button>
+      <button class="tool-chip outline" type="button" data-sort="new">M?i nh?t</button>
+      <button class="tool-chip outline" type="button" data-sort="price">
+        <i class="fa-solid fa-arrow-up"></i>
+        Giá
+      </button>
+    </section>
+
+    <section class="result-grid" id="resultGrid"></section>
+
+    <button class="more-btn" id="loadMoreBtn" type="button">Xem thêm</button>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <div class="share-modal" id="shareModal" aria-hidden="true">
+    <div class="share-modal__overlay" data-share-close="true"></div>
+    <div class="share-modal__panel" role="dialog" aria-modal="true" aria-labelledby="shareModalTitle">
+      <div class="share-sheet__head">
+        <h3 id="shareModalTitle">Chia s?</h3>
+        <button type="button" class="share-sheet__close" data-share-close="true" aria-label="Ðóng">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <p class="share-sheet__subtitle">Chia s? v?i b?n bè và gia dình</p>
+      <p class="visually-hidden" id="shareProductName"></p>
+      <div class="share-sheet__divider"></div>
+      <div class="share-sheet__apps">
+        <button class="share-app" type="button" data-share-channel="youtube">
+          <span class="share-app__icon youtube"><img src="../assets/img/social-platform-facebook-icon.png" alt="Facebook"></span>
+          <span>Youtube</span>
+        </button>
+        <button class="share-app" type="button" data-share-channel="instagram">
+          <span class="share-app__icon instagram"><img src="../assets/img/social-platform-instagram-brandmark-icon.png" alt="Instagram"></span>
+          <span>instagram</span>
+        </button>
+        <button class="share-app" type="button" data-share-channel="twitter">
+          <span class="share-app__icon twitter"><img src="../assets/img/social-platform-x-network-icon.png" alt="X"></span>
+          <span>Twitter</span>
+        </button>
+        <button class="share-app" type="button" data-share-channel="zalo">
+          <span class="share-app__icon zalo"><img src="../assets/img/social-platform-zalo-official-icon.png" alt="Zalo"></span>
+          <span>Zalo</span>
+        </button>
+      </div>
+      <div class="share-sheet__link-row">
+        <label class="share-sheet__link-box" for="shareLinkInput">
+          <i class="fa-solid fa-link"></i>
+          <input id="shareLinkInput" type="text" readonly />
+        </label>
+        <button type="button" class="share-sheet__copy" id="copyShareLinkBtn" aria-label="Sao chép link">
+          <i class="fa-regular fa-copy"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/scripts/product-catalog-service.js"></script>
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/product-search-page/page-state-data-store.js"></script>
+  <script src="../assets/scripts/product-search-page/backend-api-client.js"></script>
+  <script src="../assets/scripts/product-search-page/business-logic-service.js"></script>
+  <script src="../assets/scripts/product-search-page/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/product-search-page/user-event-handlers.js"></script>
+  <script src="../assets/scripts/product-search-page/page-module-bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

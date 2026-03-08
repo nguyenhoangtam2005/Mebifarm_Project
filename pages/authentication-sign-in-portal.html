@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ÄÄƒng nháº­p CTV - Mebi Farm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/authentication-sign-in-page-styles.css" />
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-card" aria-label="ÄÄƒng nháº­p cá»™ng tÃ¡c viÃªn">
+      <button class="close-btn" id="closeLoginBtn" type="button" aria-label="ÄÃ³ng">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="brand-wrap">
+     <img src="../assets/img/brand-mobifarm-primary-logo-mark.png" alt="">
+      </div>
+
+      <h1>ÄÄƒng nháº­p</h1>
+
+      <form id="loginForm" novalidate>
+        <label for="usernameInput">TÃªn Ä‘Äƒng nháº­p<span>*</span></label>
+        <div class="field-wrap" id="usernameField">
+          <i class="fa-regular fa-user"></i>
+          <input id="usernameInput" type="text" autocomplete="username" placeholder="Nháº­p tÃªn Ä‘Äƒng nháº­p" />
+        </div>
+        <p class="field-error" id="usernameError"></p>
+
+        <div class="label-row">
+          <label for="passwordInput">Máº­t kháº©u<span>*</span></label>
+          <a href="#" id="forgotPasswordLink">QuÃªn máº­t kháº©u?</a>
+        </div>
+        <div class="field-wrap" id="passwordField">
+          <i class="fa-regular fa-lock"></i>
+          <input id="passwordInput" type="password" autocomplete="current-password" placeholder="Nháº­p máº­t kháº©u" />
+          <button class="eye-btn" id="togglePasswordBtn" type="button" aria-label="Hiá»‡n máº­t kháº©u">
+            <i class="fa-regular fa-eye-slash"></i>
+          </button>
+        </div>
+        <p class="field-error" id="passwordError"></p>
+
+        <button class="submit-btn" id="submitLoginBtn" type="submit">ÄÄƒng nháº­p</button>
+      </form>
+
+      <p class="register-text">ChÆ°a cÃ³ tÃ i khoáº£n? <a href="#" id="registerLink">ÄÄƒng kÃ½ ngay</a></p>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/authentication-login/page-state-data-store.js"></script>
+  <script src="../assets/scripts/authentication-login/backend-api-client.js"></script>
+  <script src="../assets/scripts/authentication-login/business-logic-service.js"></script>
+  <script src="../assets/scripts/authentication-login/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/authentication-login/user-event-handlers.js"></script>
+  <script src="../assets/scripts/authentication-login/page-module-bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
+
