@@ -1,4 +1,4 @@
-# Project Coding Guide
+﻿# Project Coding Guide
 
 Tài liệu này là quy ước chuẩn cho project.  
 Khi có yêu cầu viết/chỉnh code trong project này, luôn đọc file này trước.
@@ -27,7 +27,7 @@ Mỗi thư mục bắt buộc có đúng 6 file:
 
 ## 2) Thứ tự load script trong HTML
 
-Trong mỗi page, script phải load theo thứ tự:
+Trong mỗi page, các script phải load theo thứ tự:
 
 1. `shared-application-utilities.js` (và `product-catalog-service.js` nếu page cần dữ liệu sản phẩm)
 2. `page-state-data-store.js`

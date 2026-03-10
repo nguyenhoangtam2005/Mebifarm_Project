@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thông tin cá nhân - MobiFarm CTV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/account-profile-personal-info-styles.css" />
+</head>
+<body>
+  <main class="profile-page">
+    <header class="topbar">
+      <button class="icon-btn back-btn" id="backBtn" type="button" aria-label="Quay lại">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <h1>Thông tin cá nhân</h1>
+      <span class="topbar-spacer" aria-hidden="true"></span>
+    </header>
+
+    <form class="info-card" id="profileForm" novalidate>
+      <div class="profile-summary" aria-label="Ảnh đại diện">
+        <div class="avatar-wrap">
+          <img id="avatarImg" src="https://images.unsplash.com/photo-1623792523811-8383fda6e738?auto=format&fit=crop&w=360&q=80" alt="Ảnh đại diện hiện tại" />
+          <button class="camera-btn" id="changeAvatarBtn" type="button" aria-label="Đổi ảnh đại diện">
+            <i class="fa-solid fa-camera" aria-hidden="true"></i>
+          </button>
+          <input id="avatarInput" type="file" accept="image/*" hidden />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="displayNameInput">Họ và tên</label>
+        <div class="input-shell">
+          <i class="fa-regular fa-user" aria-hidden="true"></i>
+          <input id="displayNameInput" type="text" name="fullName" placeholder="Tên cộng tác viên" autocomplete="name" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="genderSelect">Giới tính</label>
+        <div class="input-shell select-shell">
+          <select id="genderSelect" name="gender">
+            <option value="">Giới tính</option>
+            <option value="female">Nữ</option>
+            <option value="male">Nam</option>
+            <option value="other">Khác</option>
+          </select>
+          <i class="fa-solid fa-chevron-down chevron" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="birthdayInput">Ngày sinh</label>
+        <div class="input-shell">
+          <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+          <input id="birthdayInput" type="date" name="birthday" placeholder="Ngày/Tháng/Năm" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="phoneInput">Số điện thoại</label>
+        <div class="input-shell readonly">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <input id="phoneInput" type="text" name="phone" readonly />
+        </div>
+      </div>
+
+      <div class="field inline-action">
+        <label for="emailInput">Email</label>
+        <div class="input-with-action">
+          <div class="input-shell">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <input id="emailInput" type="email" name="email" placeholder="khachhang@gmail.com" readonly />
+          </div>
+          <button class="link-btn" id="emailChangeBtn" type="button">Thay đổi</button>
+        </div>
+      </div>
+
+      <div class="field inline-action">
+        <label for="affiliateInput">Affiliate ID</label>
+        <div class="input-with-action">
+          <div class="input-shell readonly">
+            <i class="fa-solid fa-link" aria-hidden="true"></i>
+            <input id="affiliateInput" type="text" name="affiliateId" readonly />
+          </div>
+          <button class="link-btn" id="affiliateCopyBtn" type="button">Sao chép</button>
+        </div>
+      </div>
+
+      <div class="field inline-action">
+        <label for="referralInput">Mã giới thiệu CTV</label>
+        <div class="input-with-action">
+          <div class="input-shell readonly">
+            <i class="fa-solid fa-link" aria-hidden="true"></i>
+            <input id="referralInput" type="text" name="referralCode" readonly />
+          </div>
+          <button class="link-btn" id="referralCopyBtn" type="button">Sao chép</button>
+        </div>
+      </div>
+
+      <button class="primary-btn" id="saveBtn" type="submit">Lưu thay đổi</button>
+    </form>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <section class="sheet-overlay" id="emailSheet" aria-hidden="true">
+    <div class="sheet-card">
+      <header class="sheet-topbar">
+        <button class="icon-btn" id="emailSheetBackBtn" type="button" aria-label="Quay lại"><i class="fa-solid fa-chevron-left"></i></button>
+        <h2 id="emailSheetTitle">Thay đổi Email</h2>
+        <button class="icon-btn ghost" id="emailSheetCloseBtn" type="button" aria-label="Đóng"><i class="fa-solid fa-xmark"></i></button>
+      </header>
+
+      <div class="sheet-body" id="emailStepInput">
+        <div class="field">
+          <label for="newEmailInput">Nhập địa chỉ Email</label>
+          <div class="input-shell">
+            <i class="fa-regular fa-envelope"></i>
+            <input id="newEmailInput" type="email" placeholder="Nhap dia chi Email" autocomplete="email" />
+          </div>
+        </div>
+        <label class="checkbox-row">
+          <input id="marketingOptIn" type="checkbox" />
+          <span>Tôi đồng ý nhận Email quảng cáo, khuyến mãi và tin tức từ PinkyEgg</span>
+        </label>
+        <button class="primary-btn" id="sendOtpBtn" type="button">Gửi mã xác thực</button>
+      </div>
+
+      <div class="sheet-body is-hidden" id="emailStepOtp">
+        <p class="otp-hint">Mã xác thực đã được gửi đến Email <strong id="pendingEmailLabel"></strong><br />Vui lòng kiểm tra Email và nhập mã xác thực vào đây</p>
+        <div class="otp-inputs" id="otpInputs">
+          <input type="text" inputmode="numeric" maxlength="1" />
+          <input type="text" inputmode="numeric" maxlength="1" />
+          <input type="text" inputmode="numeric" maxlength="1" />
+          <input type="text" inputmode="numeric" maxlength="1" />
+          <input type="text" inputmode="numeric" maxlength="1" />
+          <input type="text" inputmode="numeric" maxlength="1" />
+        </div>
+        <div class="otp-resend">
+          <span>Không nhận được mã?</span>
+          <button class="link-btn" id="resendOtpBtn" type="button" disabled>Gửi lại mã</button>
+          <span id="otpCountdown">(01:00)</span>
+        </div>
+        <button class="primary-btn" id="confirmOtpBtn" type="button">Tiếp tục</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/account-profile-personal-info/page-state-data-store.js"></script>
+  <script src="../assets/scripts/account-profile-personal-info/backend-api-client.js"></script>
+  <script src="../assets/scripts/account-profile-personal-info/business-logic-service.js"></script>
+  <script src="../assets/scripts/account-profile-personal-info/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/account-profile-personal-info/user-event-handlers.js"></script>
+  <script src="../assets/scripts/account-profile-personal-info/page-module-bootstrap.js"></script>
+</body>
+</html>

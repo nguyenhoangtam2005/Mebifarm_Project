@@ -10,7 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: #f4f0ef;
+  background: #fff;
   border-bottom: 1px solid #e6dfdb;
   display: grid;
   grid-template-columns: 34px 1fr;

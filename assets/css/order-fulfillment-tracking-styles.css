@@ -14,7 +14,7 @@
   grid-template-columns: 34px minmax(0, 1fr);
   align-items: center;
   gap: 6px;
-  background: #f5f3f2;
+  background: #fff;
   border-bottom: 1px solid #ece7e4;
   padding: 12px 14px 10px;
 }

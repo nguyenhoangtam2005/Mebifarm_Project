@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tï¿½i kho?n - MobiFarm CTV</title>
+  <title>Tài khoản - MobiFarm CTV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,44 +16,48 @@
     <div class="account-cover"></div>
 
     <section class="profile-card">
-      <img class="avatar" src="https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=180&q=80" alt="?nh d?i di?n" />
-      <strong id="accountName">{H? vï¿½ tï¿½n}</strong>
+      <img class="avatar" src="https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=180&q=80" alt="Ảnh đại diện" />
+      <strong id="accountName">{Họ và tên}</strong>
     </section>
 
     <section class="panel">
-      <h2>Tï¿½i kho?n</h2>
-      <button class="row-btn" type="button" data-action="profile">
+      <h2>Tài khoản</h2>
+      <a class="row-btn" href="./account-profile-personal-info.html">
         <i class="fa-solid fa-circle-user"></i>
-        <span>Thï¿½ng tin cï¿½ nhï¿½n</span>
-      </button>
+        <span>Thông tin cá nhân</span>
+      </a>
       <button class="row-btn" type="button" data-action="platform">
         <i class="fa-solid fa-globe"></i>
-        <span>N?n t?ng qu?ng bï¿½</span>
+        <span>Nền tảng quảng bá</span>
       </button>
     </section>
 
     <section class="panel">
-      <h2>Thï¿½ng tin chung</h2>
-      <button class="row-btn" type="button" data-action="faq">
+      <h2>Thông tin chung</h2>
+      <a class="row-btn" href="./faq-help-center.html">
         <i class="fa-solid fa-circle-question"></i>
-        <span>Cï¿½u h?i thu?ng g?p</span>
-      </button>
-      <button class="row-btn" type="button" data-action="terms">
+        <span>Câu hỏi thường gặp</span>
+      </a>
+      <a class="row-btn" href="./promotion-platform-management.html">
+        <i class="fa-solid fa-globe"></i>
+        <span>Nền tảng quảng bá</span>
+      </a>
+      <a class="row-btn" href="./terms-and-service-policy.html">
         <i class="fa-solid fa-file-lines"></i>
-        <span>ï¿½i?u kho?n & D?ch v?</span>
-      </button>
+        <span>Điều khoản & Dịch vụ</span>
+      </a>
     </section>
 
     <button class="logout-btn" id="logoutBtn" type="button">
       <i class="fa-solid fa-arrow-right-from-bracket"></i>
-      <span>ï¿½ang xu?t</span>
+      <span>Đăng xuất</span>
     </button>
   </main>
 
   <nav class="mobile-nav" id="mobileNav">
     <a href="./sales-affiliate-dashboard-overview.html" data-tab="home">
       <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
-      <span class="nav-label">Trang ch?</span>
+      <span class="nav-label">Trang chủ</span>
     </a>
     <a href="./revenue-performance-analytics-dashboard.html" data-tab="customers">
       <span class="nav-ico">
@@ -64,11 +68,11 @@
     </a>
     <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
       <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
-      <span class="nav-label">ï¿½on hï¿½ng</span>
+      <span class="nav-label">Đơn hàng</span>
     </a>
     <a class="active" href="./account-profile-management-center.html" data-tab="account">
       <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
-      <span class="nav-label">Tï¿½i kho?n</span>
+      <span class="nav-label">Tài khoản</span>
     </a>
   </nav>
 
@@ -83,6 +87,3 @@
   <script src="../assets/scripts/account-profile-management/page-module-bootstrap.js"></script>
 </body>
 </html>
-
-
-

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Câu hỏi thường gặp - MobiFarm CTV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
+  <link rel="stylesheet" href="../assets/css/faq-help-center-styles.css" />
+</head>
+<body>
+  <main class="faq-page">
+    <header class="faq-topbar">
+      <button class="icon-btn" id="faqBackBtn" type="button" aria-label="Quay lại"><i class="fa-solid fa-chevron-left"></i></button>
+      <h1>Câu hỏi thường gặp</h1>
+      <span class="topbar-spacer" aria-hidden="true"></span>
+    </header>
+
+    <section class="search-box">
+      <div class="input-shell">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="faqSearchInput" type="search" placeholder="Nhập câu hỏi của bạn..." />
+      </div>
+    </section>
+
+    <section class="chips" id="faqFilterChips">
+      <button class="chip active" data-filter="all">Tất cả</button>
+      <button class="chip" data-filter="order">Đặt hàng</button>
+      <button class="chip" data-filter="payment">Thanh toán</button>
+      <button class="chip" data-filter="delivery">Giao hàng</button>
+    </section>
+
+    <section class="faq-list" id="faqList" aria-label="Danh sách câu hỏi"></section>
+
+    <section class="support-card">
+      <h2>Liên hệ hỗ trợ</h2>
+      <button class="support-btn" data-action="chat">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span class="support-text">
+          <span class="support-title">Chat với bộ phận Hỗ trợ</span>
+          <span class="support-sub">CSKH 24/7</span>
+        </span>
+      </button>
+      <button class="support-btn" data-action="hotline">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span class="support-text">
+          <span class="support-title">Liên hệ qua Hotline</span>
+          <span class="support-sub">1900 1234</span>
+        </span>
+      </button>
+      <button class="support-btn" data-action="email">
+        <i class="fa-regular fa-envelope"></i>
+        <span class="support-text">
+          <span class="support-title">Liên hệ qua Email</span>
+          <span class="support-sub">cskh@pinky.com</span>
+        </span>
+      </button>
+    </section>
+
+    <section class="policy-card">
+      <h2>Điều khoản & Chính sách</h2>
+      <a class="policy-row" href="#" data-policy="payment">Chính sách thanh toán <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a class="policy-row" href="#" data-policy="delivery">Chính sách giao vận <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a class="policy-row" href="#" data-policy="refund">Chính sách đổi & trả <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="policy-sheet" aria-hidden="true">
+    <div class="policy-panel" role="dialog" aria-modal="true" aria-labelledby="policyTitle">
+      <header class="policy-topbar">
+        <button type="button" class="icon-btn ghost" id="policyClose" aria-label="Đóng">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <h2 id="policyTitle"></h2>
+        <span class="topbar-spacer" aria-hidden="true"></span>
+      </header>
+      <div class="policy-body" id="policyBody"></div>
+    </div>
+  </div>
+
+  <script src="../assets/scripts/shared-application-utilities.js"></script>
+  <script src="../assets/scripts/faq-help-center/page-state-data-store.js"></script>
+  <script src="../assets/scripts/faq-help-center/backend-api-client.js"></script>
+  <script src="../assets/scripts/faq-help-center/business-logic-service.js"></script>
+  <script src="../assets/scripts/faq-help-center/ui-renderer-view.js"></script>
+  <script src="../assets/scripts/faq-help-center/user-event-handlers.js"></script>
+  <script src="../assets/scripts/faq-help-center/page-module-bootstrap.js"></script>
+</body>
+</html>
