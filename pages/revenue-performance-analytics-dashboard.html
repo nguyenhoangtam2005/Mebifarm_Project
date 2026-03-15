@@ -1,182 +1,252 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phân tích doanh thu - MobiFarm CTV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
-  <link rel="stylesheet" href="../assets/css/revenue-performance-analytics-styles.css" />
-</head>
-<body>
-  <main class="revenue-page">
-    <header class="revenue-header">
-      <button class="header-back" id="revenueBackBtn" type="button" aria-label="Quay lại">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <h1>Phân tích doanh thu</h1>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phân tích doanh thu - MobiFarm CTV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/shared-global-stylesheet-foundation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/revenue-performance-analytics-styles.css"
+    />
+  </head>
+  <body>
+    <main class="revenue-page">
+      <header class="revenue-header">
+        <button
+          class="header-back"
+          id="revenueBackBtn"
+          type="button"
+          aria-label="Quay lại"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h1>Phân tích doanh thu</h1>
+      </header>
 
-    <section class="goal-card">
-      <p class="goal-chip">Cộng tác viên</p>
-      <h2>TRẦN MINH HIẾU</h2>
-      <p class="goal-label">Chỉ tiêu</p>
-      <p class="goal-value">50.000đ / 100.000đ</p>
-      <div class="goal-track">
-        <span style="width: 50%"></span>
-      </div>
-      <p class="goal-note">Hoàn thành chỉ tiêu để lên hạng tiếp theo</p>
-    </section>
+      <section class="goal-card">
+        <img
+          src="../assets/img/thẻ ctv.png"
+          alt="Thẻ cộng tác viên"
+          style="width: 100%; height: auto; display: block; margin: 0 auto"
+        />
+      </section>
 
-    <section class="range-row" id="rangeRow">
-      <button class="range-btn active" type="button" data-range="today"><i class="fa-solid fa-check"></i>Hôm nay</button>
-      <button class="range-btn" type="button" data-range="7d">7 ngày</button>
-      <button class="range-btn" type="button" data-range="30d">30 ngày</button>
-      <button class="range-btn select" type="button" data-range="custom">Tùy chọn <i class="fa-solid fa-angle-down"></i></button>
-    </section>
+      <section class="range-row" id="rangeRow">
+        <button class="range-btn active" type="button" data-range="today">
+          <i class="fa-solid fa-check"></i>Hôm nay
+        </button>
+        <button class="range-btn" type="button" data-range="7d">7 ngày</button>
+        <button class="range-btn" type="button" data-range="30d">
+          30 ngày
+        </button>
+        <button class="range-btn select" type="button" data-range="custom">
+          Tùy chọn <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </section>
 
-    <section class="metrics-grid">
-      <article class="metric-card">
-        <div class="metric-head">
-          <h3>Hoa hồng theo cấp bậc</h3>
-          <span class="metric-ico purple"><i class="fa-solid fa-link"></i></span>
+      <section class="metrics-grid">
+        <article class="metric-card">
+          <div class="metric-head">
+            <h3>Hoa hồng theo cấp bậc</h3>
+            <span class="metric-ico purple"
+              ><i class="fa-solid fa-link"></i
+            ></span>
+          </div>
+          <p class="metric-main accent-purple">1%</p>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-head">
+            <h3>Tỷ lệ hoàn trả hàng</h3>
+            <span class="metric-ico amber"
+              ><i class="fa-solid fa-rotate-left"></i
+            ></span>
+          </div>
+          <p class="metric-main accent-amber">5%</p>
+          <p class="metric-sub">
+            <span class="chip-down">~ 8.5%</span> so với tháng trước
+          </p>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-head">
+            <h3>Tổng hoa hồng kiếm được</h3>
+            <span class="metric-ico rose"
+              ><i class="fa-solid fa-piggy-bank"></i
+            ></span>
+          </div>
+          <p class="metric-main accent-red">5.381.128đ</p>
+          <p class="metric-sub">
+            <span class="chip-up">~ 8.5%</span> so với tháng trước
+          </p>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-head">
+            <h3>Tổng đơn hàng</h3>
+            <span class="metric-ico orange"
+              ><i class="fa-solid fa-cube"></i
+            ></span>
+          </div>
+          <p class="metric-main accent-orange">134</p>
+          <p class="metric-sub">
+            <span class="chip-down">~ 8.5%</span> so với tháng trước
+          </p>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-head">
+            <h3>Tổng số lượt xem sản phẩm</h3>
+            <span class="metric-ico pink"
+              ><i class="fa-solid fa-location-arrow"></i
+            ></span>
+          </div>
+          <p class="metric-main accent-pink">134</p>
+          <p class="metric-sub">
+            <span class="chip-up">~ 8.5%</span> so với tháng trước
+          </p>
+        </article>
+      </section>
+
+      <section class="chart-card">
+        <h3>Hoa hồng kiếm được từ các đơn hàng</h3>
+        <div class="bars">
+          <div class="bar-wrap">
+            <span style="height: 78%"></span>
+            <p>Tháng 1</p>
+          </div>
+          <div class="bar-wrap">
+            <span style="height: 22%"></span>
+            <p>Tháng 2</p>
+          </div>
+          <div class="bar-wrap">
+            <span style="height: 60%"></span>
+            <p>Tháng 3</p>
+          </div>
+          <div class="bar-wrap">
+            <span style="height: 36%"></span>
+            <p>Tháng 4</p>
+          </div>
         </div>
-        <p class="metric-main accent-purple">1%</p>
-      </article>
+      </section>
 
-      <article class="metric-card">
-        <div class="metric-head">
-          <h3>Tỷ lệ hoàn trả hàng</h3>
-          <span class="metric-ico amber"><i class="fa-solid fa-rotate-left"></i></span>
+      <section class="chart-card">
+        <h3>Top sản phẩm bán chạy nhất</h3>
+        <div class="top-list">
+          <div class="top-item">
+            <p>Trứng gà PinkyEgg 12 trứng</p>
+            <span><b style="width: 82%"></b></span>
+          </div>
+          <div class="top-item">
+            <p>Thùng trứng gà PinkyEgg 30 trứng</p>
+            <span><b style="width: 94%"></b></span>
+          </div>
+          <div class="top-item">
+            <p>Trứng gà PinkyEgg 24 trứng</p>
+            <span><b style="width: 88%"></b></span>
+          </div>
+          <div class="top-item">
+            <p>Khay trứng gà PinkyEgg 12 trứng</p>
+            <span><b style="width: 97%"></b></span>
+          </div>
+          <div class="top-item">
+            <p>Trứng gà PinkyEgg 8 trứng</p>
+            <span><b style="width: 90%"></b></span>
+          </div>
         </div>
-        <p class="metric-main accent-amber">5%</p>
-        <p class="metric-sub"><span class="chip-down">~ 8.5%</span> so với tháng trước</p>
-      </article>
+        <div class="axis-row"><span>0</span><span>500</span></div>
+      </section>
 
-      <article class="metric-card">
-        <div class="metric-head">
-          <h3>Tổng hoa hồng kiếm được</h3>
-          <span class="metric-ico rose"><i class="fa-solid fa-piggy-bank"></i></span>
+      <section class="chart-card">
+        <h3>Tổng đơn hàng & Số lượng đơn hàng đổi/hoàn</h3>
+        <svg class="line-chart" viewBox="0 0 320 220" aria-hidden="true">
+          <line x1="26" y1="180" x2="300" y2="180"></line>
+          <line x1="26" y1="145" x2="300" y2="145"></line>
+          <line x1="26" y1="110" x2="300" y2="110"></line>
+          <line x1="26" y1="75" x2="300" y2="75"></line>
+          <line x1="26" y1="40" x2="300" y2="40"></line>
+          <polyline
+            class="line-purple"
+            points="26,120 60,145 85,165 110,70 145,150 180,100 220,140 265,80 300,55"
+          ></polyline>
+          <polyline
+            class="line-green"
+            points="26,95 60,82 85,85 110,125 145,112 180,85 220,40 250,55 300,110"
+          ></polyline>
+        </svg>
+        <div class="legend">
+          <span><i class="dot purple"></i> Tổng đơn hàng</span>
+          <span><i class="dot green"></i> Số lượng đơn hàng đổi/hoàn</span>
         </div>
-        <p class="metric-main accent-red">5.381.128đ</p>
-        <p class="metric-sub"><span class="chip-up">~ 8.5%</span> so với tháng trước</p>
-      </article>
+      </section>
 
-      <article class="metric-card">
-        <div class="metric-head">
-          <h3>Tổng đơn hàng</h3>
-          <span class="metric-ico orange"><i class="fa-solid fa-cube"></i></span>
+      <section class="chart-card">
+        <h3>Phân bố vị trí khách hàng</h3>
+        <div class="donut-wrap">
+          <div class="donut"></div>
         </div>
-        <p class="metric-main accent-orange">134</p>
-        <p class="metric-sub"><span class="chip-down">~ 8.5%</span> so với tháng trước</p>
-      </article>
-
-      <article class="metric-card">
-        <div class="metric-head">
-          <h3>Tổng số lượt xem sản phẩm</h3>
-          <span class="metric-ico pink"><i class="fa-solid fa-location-arrow"></i></span>
+        <div class="city-legend">
+          <span><i class="dot city-hcm"></i> TP. Hồ Chí Minh</span>
+          <span><i class="dot city-hn"></i> TP. Hà Nội</span>
+          <span><i class="dot city-dn"></i> Đà Nẵng</span>
+          <span><i class="dot city-hp"></i> Hải Phòng</span>
+          <span><i class="dot city-ct"></i> Cần Thơ</span>
+          <span><i class="dot city-khac"></i> Khác</span>
         </div>
-        <p class="metric-main accent-pink">134</p>
-        <p class="metric-sub"><span class="chip-up">~ 8.5%</span> so với tháng trước</p>
-      </article>
-    </section>
+      </section>
+    </main>
 
-    <section class="chart-card">
-      <h3>Hoa hồng kiếm được từ các đơn hàng</h3>
-      <div class="bars">
-        <div class="bar-wrap"><span style="height: 78%"></span><p>Tháng 1</p></div>
-        <div class="bar-wrap"><span style="height: 22%"></span><p>Tháng 2</p></div>
-        <div class="bar-wrap"><span style="height: 60%"></span><p>Tháng 3</p></div>
-        <div class="bar-wrap"><span style="height: 36%"></span><p>Tháng 4</p></div>
-      </div>
-    </section>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="./sales-affiliate-dashboard-overview.html" data-tab="home">
+        <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
+        <span class="nav-label">Trang chủ</span>
+      </a>
+      <a
+        class="active"
+        href="./revenue-performance-analytics-dashboard.html"
+        data-tab="customers"
+      >
+        <span class="nav-ico">
+          <i class="fa-solid fa-sack-dollar"></i>
+          <span class="nav-badge">17</span>
+        </span>
+        <span class="nav-label">Doanh thu</span>
+      </a>
+      <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
+        <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
+        <span class="nav-label">Đơn hàng</span>
+      </a>
+      <a href="./account-profile-management-center.html" data-tab="account">
+        <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
+        <span class="nav-label">Tài khoản</span>
+      </a>
+    </nav>
 
-    <section class="chart-card">
-      <h3>Top sản phẩm bán chạy nhất</h3>
-      <div class="top-list">
-        <div class="top-item"><p>Trứng gà PinkyEgg 12 trứng</p><span><b style="width: 82%"></b></span></div>
-        <div class="top-item"><p>Thùng trứng gà PinkyEgg 30 trứng</p><span><b style="width: 94%"></b></span></div>
-        <div class="top-item"><p>Trứng gà PinkyEgg 24 trứng</p><span><b style="width: 88%"></b></span></div>
-        <div class="top-item"><p>Khay trứng gà PinkyEgg 12 trứng</p><span><b style="width: 97%"></b></span></div>
-        <div class="top-item"><p>Trứng gà PinkyEgg 8 trứng</p><span><b style="width: 90%"></b></span></div>
-      </div>
-      <div class="axis-row"><span>0</span><span>500</span></div>
-    </section>
+    <div class="toast" id="toast"></div>
 
-    <section class="chart-card">
-      <h3>Tổng đơn hàng & Số lượng đơn hàng đổi/hoàn</h3>
-      <svg class="line-chart" viewBox="0 0 320 220" aria-hidden="true">
-        <line x1="26" y1="180" x2="300" y2="180"></line>
-        <line x1="26" y1="145" x2="300" y2="145"></line>
-        <line x1="26" y1="110" x2="300" y2="110"></line>
-        <line x1="26" y1="75" x2="300" y2="75"></line>
-        <line x1="26" y1="40" x2="300" y2="40"></line>
-        <polyline class="line-purple" points="26,120 60,145 85,165 110,70 145,150 180,100 220,140 265,80 300,55"></polyline>
-        <polyline class="line-green" points="26,95 60,82 85,85 110,125 145,112 180,85 220,40 250,55 300,110"></polyline>
-      </svg>
-      <div class="legend">
-        <span><i class="dot purple"></i> Tổng đơn hàng</span>
-        <span><i class="dot green"></i> Số lượng đơn hàng đổi/hoàn</span>
-      </div>
-    </section>
-
-    <section class="chart-card">
-      <h3>Phân bố vị trí khách hàng</h3>
-      <div class="donut-wrap">
-        <div class="donut"></div>
-      </div>
-      <div class="city-legend">
-        <span><i class="dot city-hcm"></i> TP. Hồ Chí Minh</span>
-        <span><i class="dot city-hn"></i> TP. Hà Nội</span>
-        <span><i class="dot city-dn"></i> Đà Nẵng</span>
-        <span><i class="dot city-hp"></i> Hải Phòng</span>
-        <span><i class="dot city-ct"></i> Cần Thơ</span>
-        <span><i class="dot city-khac"></i> Khác</span>
-      </div>
-    </section>
-  </main>
-
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="./sales-affiliate-dashboard-overview.html" data-tab="home">
-      <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
-      <span class="nav-label">Trang chủ</span>
-    </a>
-    <a class="active" href="./revenue-performance-analytics-dashboard.html" data-tab="customers">
-      <span class="nav-ico">
-        <i class="fa-solid fa-sack-dollar"></i>
-        <span class="nav-badge">17</span>
-      </span>
-      <span class="nav-label">Doanh thu</span>
-    </a>
-    <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
-      <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
-      <span class="nav-label">Đơn hàng</span>
-    </a>
-    <a href="./account-profile-management-center.html" data-tab="account">
-      <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
-      <span class="nav-label">Tài khoản</span>
-    </a>
-  </nav>
-
-  <div class="toast" id="toast"></div>
-
-  <script src="../assets/scripts/shared-application-utilities.js"></script>
-  <script src="../assets/scripts/revenue-analytics-dashboard/page-state-data-store.js"></script>
-  <script src="../assets/scripts/revenue-analytics-dashboard/backend-api-client.js"></script>
-  <script src="../assets/scripts/revenue-analytics-dashboard/business-logic-service.js"></script>
-  <script src="../assets/scripts/revenue-analytics-dashboard/ui-renderer-view.js"></script>
-  <script src="../assets/scripts/revenue-analytics-dashboard/user-event-handlers.js"></script>
-  <script src="../assets/scripts/revenue-analytics-dashboard/page-module-bootstrap.js"></script>
-</body>
+    <script src="../assets/scripts/shared-application-utilities.js"></script>
+    <script src="../assets/scripts/revenue-analytics-dashboard/page-state-data-store.js"></script>
+    <script src="../assets/scripts/revenue-analytics-dashboard/backend-api-client.js"></script>
+    <script src="../assets/scripts/revenue-analytics-dashboard/business-logic-service.js"></script>
+    <script src="../assets/scripts/revenue-analytics-dashboard/ui-renderer-view.js"></script>
+    <script src="../assets/scripts/revenue-analytics-dashboard/user-event-handlers.js"></script>
+    <script src="../assets/scripts/revenue-analytics-dashboard/page-module-bootstrap.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-

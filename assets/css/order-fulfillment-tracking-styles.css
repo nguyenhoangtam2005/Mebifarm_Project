@@ -22,7 +22,7 @@
 .orders-header h1 {
   margin: 0;
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 700;
   color: #2a2522;
 }
 
@@ -40,7 +40,8 @@
 }
 
 .orders-tabs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   overflow-x: auto;
   padding: 10px 14px 12px;
@@ -52,25 +53,34 @@
 }
 
 .tab-btn {
-  border: none;
-  border-radius: 999px;
-  padding: 8px 13px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #776d68;
+  border: 1px solid #dfd6cf;
+  border-radius: 8px;
+  background-color: white;
+  color: #726964;
+  font-size: 11px;
+  padding: 7px 8px;
+  font-weight: 400;
+  transition: all 0.18s ease;
   white-space: nowrap;
-  background: #ede9e7;
+  text-align: center;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
 }
 
 .tab-btn.active {
-  background: #f36a22;
-  color: #fff;
+  border-color: #f36a22;
+  background: #fff7f1;
+  color: #e7601e;
+  font-weight: 500;
 }
 
 .orders-list {
   padding: 10px 12px 0;
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
 .order-card {
@@ -91,7 +101,7 @@
   margin: 0;
   color: #80766f;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .status-pill {
@@ -154,8 +164,8 @@
 .order-products p {
   margin: 0;
   color: #7d726c;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .order-delivery {
@@ -243,11 +253,11 @@
 
 @media (max-width: 768px) {
   .orders-header h1 {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .order-products p {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .order-delivery {
@@ -255,7 +265,7 @@
   }
 
   .order-date {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .order-price {

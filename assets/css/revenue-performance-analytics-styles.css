@@ -91,7 +91,7 @@
 }
 
 .range-row {
-  margin: 10px 0;
+  margin: 10px 0px 0px 0px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
@@ -99,14 +99,14 @@
 
 .range-btn {
   border: 1px solid #dfd6cf;
-  border-radius: 999px;
+  border-radius: 18px;
   background: #f4f1ef;
   color: #726964;
   font-size: 11px;
-  padding: 7px 8px;
-  font-weight: 500;
+  padding: 8px 8px;
+  font-weight: 400;
   transition: all 0.18s ease;
-}
+  background-color: white;  white-space: nowrap;}
 
 .range-btn i {
   margin-right: 4px;
@@ -116,7 +116,7 @@
   border-color: #f36a22;
   background: #fff7f1;
   color: #e7601e;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .range-btn.select {
@@ -128,7 +128,7 @@
 
 .metrics-grid {
   display: grid;
-  gap: 10px;
+  gap: 0px;
 }
 
 .metric-card,
@@ -136,8 +136,9 @@
   background: #fff;
   border: 1px solid #ece5df;
   border-radius: 14px;
-  padding: 9px;
-  box-shadow: 0 8px 16px rgba(29, 20, 15, 0.05) !important;
+  padding: 18px;
+  margin-top: 12px;
+  box-shadow: var(--Shadow-sm-sm-1-offset-x, 0) var(--Shadow-sm-sm-1-offset-y, 1px) var(--Shadow-sm-sm-1-blur-radius, 3px) var(--Shadow-sm-sm-1-spread-radius, 0) var(--Shadow-sm-sm-1-color, rgba(15, 23, 42, 0.10)), var(--Shadow-sm-sm-2-offset-x, 0) var(--Shadow-sm-sm-2-offset-y, 1px) var(--Shadow-sm-sm-2-blur-radius, 2px) var(--Shadow-sm-sm-2-spread-radius, -1px) var(--Shadow-sm-sm-2-color, rgba(15, 23, 42, 0.10));
 }
 
 .metric-head {
@@ -148,11 +149,12 @@
 
 .metric-head h3,
 .chart-card h3 {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 700;
-  color: #2b2725;
-}
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2725;  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;}
 
 .metric-ico {
   width: 24px;
@@ -172,19 +174,20 @@
 .metric-main {
   margin: 8px 0 0;
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .metric-sub {
-  margin: 6px 0 0;
+  margin: 16px 0 0;
   font-size: 10px;
   color: #817771;
+  height: 28px;
 }
 
 .chip-up,
 .chip-down {
-  border-radius: 999px;
-  padding: 1px 7px;
+  border-radius: 8px;
+  padding: 8px 12px;
   margin-right: 5px;
   font-weight: 700;
 }
@@ -234,7 +237,7 @@
   border-top: 1px solid #ebe7e4;
   padding-top: 10px;
   display: grid;
-  gap: 8px;
+  gap: 20px;
 }
 
 .top-item {
