@@ -1,168 +1,259 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chi tiết sản phẩm CTV - MobiFarm</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
-  <link rel="stylesheet" href="../assets/css/product-detail-information-page-styles.css" />
-</head>
-<body>
-  <main class="page-detail">
-    <header class="detail-header">
-      <div class="detail-head-row">
-        <button id="backBtn" class="icon-circle" type="button" aria-label="Quay lại"><i class="fa-solid fa-chevron-left"></i></button>
-        <strong>Chi tiết sản phẩm CTV</strong>
-        <div style="display:flex;gap:6px;">
-          <button class="icon-circle" id="notifyBtnDetail" type="button"><i class="fa-solid fa-bell"></i></button>
-        </div>
-      </div>
-      <div class="search-mini"><i class="fa-solid fa-magnifying-glass"></i> Tìm sản phẩm để gợi khách...</div>
-    </header>
-
-    <section class="product-main-card">
-      <div>
-        <div class="hero-image-wrap">
-          <span class="badge-off" id="discountTag">-17%</span>
-          <img id="productHeroImage" src="" alt="sản phẩm" />
-        </div>
-        <div class="thumb-row" id="thumbRow"></div>
-      </div>
-
-      <div class="title-block">
-            <h1 id="productName"></h1>
-            <div class="meta"><span id="productSold"></span> | <span id="productRating"></span></div>
-            <div class="price" id="productPrice"></div>
-            <div class="old-price" id="productOldPrice"></div>
-
-        <div class="stats-card">
-          <div class="stats-top">
-            <div class="stat-box">
-              <p class="label">Hoa hồng ước tính</p>
-              <p class="val good">12.211%</p>
-            </div>
-            <div class="stat-box">
-              <p class="label">% Tỉ lệ chốt</p>
-              <p class="val bad">12%</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm CTV - MobiFarm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/shared-global-stylesheet-foundation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/product-detail-information-page-styles.css"
+    />
+  </head>
+  <body>
+    <main class="page-detail">
+      <header class="detail-header">
+        <div class="detail-head-row">
+          <button
+            id="backBtn"
+            class="icon-circle"
+            type="button"
+            aria-label="Quay lại"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <strong>Chi tiết sản phẩm CTV</strong>
+          <div style="display: flex; gap: 6px">
+            <button class="icon-circle" id="notifyBtnDetail" type="button">
+              <i class="fa-solid fa-bell"></i>
+            </button>
           </div>
-          <div class="list-kv">
-            <div><span>Tỉ lệ đơn thành công</span><strong>78%</strong></div>
-            <div><span>Tỉ lệ huỷ đơn</span><strong>10%</strong></div>
-            <div><span>Tỉ lệ cần chăm lại</span><strong style="color:#ec4d3e;">12%</strong></div>
-          </div>
-          <button id="buyNowBtn" class="buy-now" type="button"><i class="fa-solid fa-share-nodes"></i> Tạo link bán ngay</button>
         </div>
-      </div>
-    </section>
+    
+      </header>
 
-    <section class="info-card">
-      <h2>Nội dung tư vấn nhanh</h2>
-      <p id="productDescription"></p>
-    </section>
+      <section class="product-main-card">
+        <div>
+          <div class="hero-image-wrap">
+            <span class="badge-off" id="discountTag">-17%</span>
+            <img id="productHeroImage" src="" alt="sản phẩm" />
+          </div>
+          <div class="thumb-row" id="thumbRow"></div>
+        </div>
 
-    <section class="info-card">
-      <h2>Điểm nổi bật để chốt đơn</h2>
-      <ul id="productDetailList"></ul>
-    </section>
+        <div class="title-block">
+          <h1 id="productName"></h1>
+          <div class="meta">
+            <span id="productSold"></span> | <span id="productRating"></span>
+          </div>
+          <div class="price" id="productPrice"></div>
 
-    <section class="info-card">
-      <h2>Giá trị cho khách hàng</h2>
-      <ul id="productNutritionList"></ul>
-    </section>
+          <div class="stats-card">
+            <div class="stats-top">
+              <div class="stat-box">
+                <p class="label">Hoa hồng ước tính</p>
+                <p class="val good">12.211%</p>
+              </div>
+              <div class="stat-box">
+                <p class="label">% Tỉ lệ chốt</p>
+                <p class="val bad">12%</p>
+              </div>
+            </div>
+            <div class="list-kv">
+              <div><span>Tỉ lệ đơn thành công</span><strong>78%</strong></div>
+              <div><span>Tỉ lệ huỷ đơn</span><strong>10%</strong></div>
+              <div>
+                <span>Tỉ lệ cần chăm lại</span
+                ><strong style="color: #ec4d3e">12%</strong>
+              </div>
+            </div>
+         <div class="background-btn">
+             <button id="buyNowBtn" class="buy-now" type="button">
+              <i class="fa-solid fa-share-nodes"></i> Tạo link bán ngay
+            </button>
+         </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="gallery-section">
-      <div class="gallery-head">
-        <h2>Thư viện ảnh để chia sẻ</h2>
-        <span id="galleryCount">0 sản phẩm</span>
-      </div>
-      <div class="gallery-list" id="detailGallery"></div>
-    </section>
+      <div class="content">
+        <!-- CONTENT -->
 
-  </main>
+        <section id="mo-ta" class="section">
+          <h3>Mô tả sản phẩm</h3>
 
-  <nav class="mobile-nav" id="mobileNav">
-    <a class="active" href="./sales-affiliate-dashboard-overview.html" data-tab="home">
-      <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
-      <span class="nav-label">Trang chủ</span>
-    </a>
-    <a href="./revenue-performance-analytics-dashboard.html" data-tab="customers">
-      <span class="nav-ico">
-        <i class="fa-solid fa-sack-dollar"></i>
-        <span class="nav-badge">17</span>
-      </span>
-      <span class="nav-label">Doanh thu</span>
-    </a>
-    <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
-      <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
-      <span class="nav-label">Đơn hàng</span>
-    </a>
-    <a href="./account-profile-management-center.html" data-tab="account">
-      <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
-      <span class="nav-label">Tài khoản</span>
-    </a>
-  </nav>
+          <p>Gạo ST25 được vinh danh là "Gạo ngon nhất thế giới".</p>
 
-  <div class="toast" id="toast"></div>
-  <div class="share-modal" id="shareModal" aria-hidden="true">
-    <div class="share-modal__overlay" data-share-close="true"></div>
-    <div class="share-modal__panel" role="dialog" aria-modal="true" aria-labelledby="shareModalTitle">
-      <div class="share-sheet__head">
-        <h3 id="shareModalTitle">Chia sẻ</h3>
-        <button type="button" class="share-sheet__close" data-share-close="true" aria-label="Đóng">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <p class="share-sheet__subtitle">Chia sẻ với bạn bè và gia đình</p>
-      <p class="visually-hidden" id="shareProductName"></p>
-      <div class="share-sheet__divider"></div>
-      <div class="share-sheet__apps">
-        <button class="share-app" type="button" data-share-channel="youtube">
-          <span class="share-app__icon youtube"><img src="../assets/img/social-platform-facebook-icon.png" alt="Facebook"></span>
-          <span>Youtube</span>
-        </button>
-        <button class="share-app" type="button" data-share-channel="instagram">
-          <span class="share-app__icon instagram"><img src="../assets/img/social-platform-instagram-brandmark-icon.png" alt="Instagram"></span>
-          <span>instagram</span>
-        </button>
-        <button class="share-app" type="button" data-share-channel="twitter">
-          <span class="share-app__icon twitter"><img src="../assets/img/social-platform-x-network-icon.png" alt="X"></span>
-          <span>Twitter</span>
-        </button>
-        <button class="share-app" type="button" data-share-channel="zalo">
-          <span class="share-app__icon zalo"><img src="../assets/img/social-platform-zalo-official-icon.png" alt="Zalo"></span>
-          <span>Zalo</span>
-        </button>
-      </div>
-      <div class="share-sheet__link-row">
-        <label class="share-sheet__link-box" for="shareLinkInput">
-          <i class="fa-solid fa-link"></i>
-          <input id="shareLinkInput" type="text" readonly />
-        </label>
-        <button type="button" class="share-sheet__copy" id="copyShareLinkBtn" aria-label="Sao chép link">
-          <i class="fa-regular fa-copy"></i>
-        </button>
+          <p>Được canh tác theo mô hình Lúa - Tôm sạch.</p>
+        </section>
+
+        <section id="chi-tiet" class="section">
+          <h3>Chi tiết sản phẩm</h3>
+
+          <div class="detail-row">
+            <span>Trọng lượng</span>
+            <span>5kg</span>
+          </div>
+
+          <div class="detail-row">
+            <span>Xuất xứ</span>
+            <span>Sóc Trăng</span>
+          </div>
+
+          <div class="detail-row">
+            <span>Thương hiệu</span>
+            <span>Premium Agri</span>
+          </div>
+        </section>
+
+        <section id="su-dung" class="section">
+          <h3>Hướng dẫn sử dụng</h3>
+
+          <ol>
+            <li>Vo gạo nhẹ với nước sạch</li>
+            <li>1 chén gạo - 1 chén nước</li>
+            <li>Nấu bằng nồi cơm điện</li>
+          </ol>
+        </section>
+
+        <section id="bao-quan" class="section">
+          <h3>Cách bảo quản</h3>
+
+          <p>Bảo quản nơi khô ráo</p>
+          <p>Đậy kín sau khi sử dụng</p>
+        </section>
+   </div>
+
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a
+        class="active"
+        href="./sales-affiliate-dashboard-overview.html"
+        data-tab="home"
+      >
+        <span class="nav-ico"><i class="fa-solid fa-house"></i></span>
+        <span class="nav-label">Trang chủ</span>
+      </a>
+      <a
+        href="./revenue-performance-analytics-dashboard.html"
+        data-tab="customers"
+      >
+        <span class="nav-ico">
+          <i class="fa-solid fa-sack-dollar"></i>
+          <span class="nav-badge">17</span>
+        </span>
+        <span class="nav-label">Doanh thu</span>
+      </a>
+      <a href="./order-fulfillment-tracking-center.html" data-tab="orders">
+        <span class="nav-ico"><i class="fa-solid fa-clipboard-list"></i></span>
+        <span class="nav-label">Đơn hàng</span>
+      </a>
+      <a href="./account-profile-management-center.html" data-tab="account">
+        <span class="nav-ico"><i class="fa-solid fa-user"></i></span>
+        <span class="nav-label">Tài khoản</span>
+      </a>
+    </nav>
+
+    <div class="toast" id="toast"></div>
+    <div class="share-modal" id="shareModal" aria-hidden="true">
+      <div class="share-modal__overlay" data-share-close="true"></div>
+      <div
+        class="share-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="shareModalTitle"
+      >
+        <div class="share-sheet__head">
+          <h3 id="shareModalTitle">Chia sẻ</h3>
+          <button
+            type="button"
+            class="share-sheet__close"
+            data-share-close="true"
+            aria-label="Đóng"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="share-sheet__subtitle">Chia sẻ với bạn bè và gia đình</p>
+        <p class="visually-hidden" id="shareProductName"></p>
+        <div class="share-sheet__divider"></div>
+        <div class="share-sheet__apps">
+          <button class="share-app" type="button" data-share-channel="youtube">
+            <span class="share-app__icon youtube"
+              ><img
+                src="../assets/img/social-platform-facebook-icon.png"
+                alt="Facebook"
+            /></span>
+            <span>Youtube</span>
+          </button>
+          <button
+            class="share-app"
+            type="button"
+            data-share-channel="instagram"
+          >
+            <span class="share-app__icon instagram"
+              ><img
+                src="../assets/img/social-platform-instagram-brandmark-icon.png"
+                alt="Instagram"
+            /></span>
+            <span>instagram</span>
+          </button>
+          <button class="share-app" type="button" data-share-channel="twitter">
+            <span class="share-app__icon twitter"
+              ><img
+                src="../assets/img/social-platform-x-network-icon.png"
+                alt="X"
+            /></span>
+            <span>Twitter</span>
+          </button>
+          <button class="share-app" type="button" data-share-channel="zalo">
+            <span class="share-app__icon zalo"
+              ><img
+                src="../assets/img/social-platform-zalo-official-icon.png"
+                alt="Zalo"
+            /></span>
+            <span>Zalo</span>
+          </button>
+        </div>
+        <div class="share-sheet__link-row">
+          <label class="share-sheet__link-box" for="shareLinkInput">
+            <i class="fa-solid fa-link"></i>
+            <input id="shareLinkInput" type="text" readonly />
+          </label>
+          <button
+            type="button"
+            class="share-sheet__copy"
+            id="copyShareLinkBtn"
+            aria-label="Sao chép link"
+          >
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="../assets/scripts/product-catalog-service.js"></script>
-  <script src="../assets/scripts/shared-application-utilities.js"></script>
-  <script src="../assets/scripts/product-details-page/page-state-data-store.js"></script>
-  <script src="../assets/scripts/product-details-page/backend-api-client.js"></script>
-  <script src="../assets/scripts/product-details-page/business-logic-service.js"></script>
-  <script src="../assets/scripts/product-details-page/ui-renderer-view.js"></script>
-  <script src="../assets/scripts/product-details-page/user-event-handlers.js"></script>
-  <script src="../assets/scripts/product-details-page/page-module-bootstrap.js"></script>
-</body>
+    <script src="../assets/scripts/product-catalog-service.js"></script>
+    <script src="../assets/scripts/shared-application-utilities.js"></script>
+    <script src="../assets/scripts/product-details-page/page-state-data-store.js"></script>
+    <script src="../assets/scripts/product-details-page/backend-api-client.js"></script>
+    <script src="../assets/scripts/product-details-page/business-logic-service.js"></script>
+    <script src="../assets/scripts/product-details-page/ui-renderer-view.js"></script>
+    <script src="../assets/scripts/product-details-page/user-event-handlers.js"></script>
+    <script src="../assets/scripts/product-details-page/page-module-bootstrap.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-

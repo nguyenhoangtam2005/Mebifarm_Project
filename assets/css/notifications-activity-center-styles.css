@@ -36,9 +36,6 @@
   height: 34px;
 }
 
-.notify-content {
-  padding: 10px 2px 0;
-}
 
 .notify-content h2 {
   margin: 0 0 10px;
@@ -48,11 +45,12 @@
 .notify-card {
   border-radius: 10px;
   background: #fff;
-  padding: 12px;
+  padding: 16px;
   display: grid;
   grid-template-columns: 24px 1fr;
   gap: 10px;
   margin-bottom: 10px;
+  margin-top: 8px;
   position: relative;
 }
 
@@ -70,13 +68,18 @@
 .notify-card h3 {
   margin: 0;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .notify-card p {
-  margin: 6px 0 0;
-  color: #6e7278;
-  font-size: 11px;
+  margin: 8px 0 0;
+  color: var(--base-muted-foreground, #737373);
+  font-size: 14px;
   line-height: 1.45;
+  font-weight: 100;
+  font-style: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .notify-card .dot {

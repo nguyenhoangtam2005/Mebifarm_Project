@@ -136,7 +136,7 @@ body {
   padding: 12px 14px 8px;
   position: sticky;
   top: 0;
-  background: linear-gradient(180deg, #fffdfb 0%, #fff9f5 100%);
+ background-color: white;
   z-index: 3;
   border-bottom: 1px solid #f0e7df;
 }
@@ -217,10 +217,11 @@ body {
 }
 
 .field label {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--text-muted);
-  font-size: 13px;
+color: var(--base-foreground, #0A0A0A);
+font-size: var(--text-sm-font-size, 14px);
+font-style: normal;
+font-weight: var(--font-weight-medium, 400);
+line-height: 100%; /* 14px */
 }
 
 .input-shell {
