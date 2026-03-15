@@ -47,7 +47,7 @@
   display: grid;
   grid-template-columns: 38px 1fr;
   gap: 10px;
-  padding: 12px 14px;
+  padding: 16px;
   border-radius: 14px;
   background: #fff7f0;
   border: 1px solid #ffd9b7;
@@ -72,7 +72,7 @@
   background: #fff;
   border: 1px solid #eee4dd;
   border-radius: 14px;
-  padding: 10px 10px 12px;
+  padding: 16px;
   box-shadow: 0 12px 22px rgba(18, 10, 6, 0.05);
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .badge-linked {
@@ -95,8 +95,8 @@
   font-size: 12px;
 }
 
-.platform-title { margin: 0; font-size: 14px; font-weight: 700; color: #1f1a17; }
-.platform-sub { margin: 0; font-size: 12px; color: #6c615a; line-height: 1.4; font-weight: 500; }
+.platform-title { margin: 0; font-size: 14px; font-weight: 500; color: #1f1a17; margin-bottom: 4px; }
+.platform-sub { margin: 0; font-size: 12px; color: #6c615a; line-height: 1.4; font-weight: 100; }
 
 .platform-meta {
   display: grid;
@@ -274,15 +274,15 @@
 body.lock-scroll { overflow: hidden; }
 
 @media (max-width: 520px) {
-  .platform-page { padding-bottom: 16px; }
+  .platform-page { padding-bottom: 8px;}
 }
 .platform-page {
-  gap: 14px;
+  gap: 8px;
 }
 
-.card { margin-bottom: 8px; }
+.card { margin-bottom: 4px; }
 
-.card + .card { margin-top: -4px; }
+.card + .card { margin-top: 8px; }
 
 .card.add-card { margin-bottom: 10px; }
 
