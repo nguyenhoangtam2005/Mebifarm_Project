@@ -138,13 +138,17 @@
   justify-content: center;
   text-align: left;
   gap: 6px;
-  padding: 28px;
-  width: calc(100% - 40px);
-  max-width: 520px;
+  padding: 48px;
+  width: 100%;
+  max-width: 820px;
   margin-inline: auto;
   height: 100%;
   box-sizing: border-box;
   background: rgba(0,0,0,0.28);
+  margin-left: 0;
+  margin-right: 0;
+  
+
 }
 
 .chip-label {
@@ -274,8 +278,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 12px;
-  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 .section-head h2 { margin: 0; font-size: 14px; }
