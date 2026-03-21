@@ -27,7 +27,7 @@
           '<div class="order-foot">',
           '<p class="order-date">' + order.time + '</p>',
           '<div class="order-right">',
-          order.canRetry ? '<button class="retry-btn" type="button" data-retry-id="' + order.id + '"><i class="fa-solid fa-rotate-right"></i>Đặt lại</button>' : '',
+          order.status === "cancelled" ? '' : (order.canRetry ? '<button class="retry-btn" type="button" data-retry-id="' + order.id + '"><i class="fa-solid fa-rotate-right"></i>Đặt lại</button>' : ''),
           '<p class="order-price">' + Service.formatCurrency(order.total) + '</p>',
           '</div>', '</div>', '</div>', '</article>'
         ].join('')

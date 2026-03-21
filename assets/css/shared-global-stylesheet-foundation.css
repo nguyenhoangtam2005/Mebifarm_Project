@@ -32,11 +32,23 @@ body {
 .fa-solid,
 .fa-regular,
 .fa-brands {
-  color: inherit;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.4px;
-  -webkit-text-stroke-color: currentColor;
-  paint-order: stroke fill;
+  color: inherit; /* keep icon color inheriting from context */
+  font-style: normal;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-regular {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 
 img {

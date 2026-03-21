@@ -1,71 +1,120 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nền tảng quảng bá - MobiFarm CTV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/shared-global-stylesheet-foundation.css" />
-  <link rel="stylesheet" href="../assets/css/promotion-platform-management-styles.css" />
-  <style>@import url("../assets/css/promotion-platform-management-styles.css");</style>
-</head>
-<body>
-  <main class="platform-page">
-    <header class="page-header">
-      <button class="icon-btn ghost" id="backBtn" type="button" aria-label="Quay lại">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-      <h1>Nền tảng quảng bá</h1>
-      <span class="topbar-spacer" aria-hidden="true"></span>
-    </header>
-
-    <section class="summary-card" id="summaryCard">
-      <div class="summary-icon">
-        <i class="fa-solid fa-bell"></i>
-      </div>
-      <div class="summary-text">
-        <p class="summary-title">Chọn nền tảng quảng bá</p>
-        <p class="summary-desc" id="summaryDesc">Bạn đã liên kết thành công 0 nền tảng</p>
-      </div>
-    </section>
-
-    <section class="linked-section" aria-label="Đã liên kết" id="linkedList"></section>
-
-    <section class="available-section" aria-label="Chưa liên kết">
-      <h2 class="available-title">Nền tảng khác</h2>
-      <div class="available-list" id="availableList"></div>
-    </section>
-  </main>
-
-  <div class="toast" id="toast"></div>
-
-  <div class="modal-sheet" id="linkModal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <header class="modal-head">
-        <h3 id="modalTitle">Thêm nền tảng</h3>
-        <button class="icon-btn ghost" id="modalClose" type="button" aria-label="Đóng"><i class="fa-solid fa-xmark"></i></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nền tảng quảng bá - MobiFarm CTV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/shared-global-stylesheet-foundation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/promotion-platform-management-styles.css"
+    />
+    <style>
+      @import url("../assets/css/promotion-platform-management-styles.css");
+    </style>
+  </head>
+  <body>
+    <main class="platform-page">
+      <header class="page-header">
+        <button
+          class="icon-btn ghost"
+          id="backBtn"
+          type="button"
+          aria-label="Quay lại"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <h1>Nền tảng quảng bá</h1>
+        <span class="topbar-spacer" aria-hidden="true"></span>
       </header>
-      <p class="modal-desc" id="modalDesc">Vui lòng nhập đường dẫn nền tảng để tham gia chương trình tiếp thị liên kết.</p>
-      <div class="modal-input">
-        <i class="fa-solid fa-link"></i>
-        <input id="modalInput" type="url" placeholder="Ví dụ https://www.youtube.com/@username" />
-      </div>
-      <div class="modal-actions">
-        <button class="btn ghost" id="modalCancel" type="button">Hủy</button>
-        <button class="btn primary" id="modalConfirm" type="button">Xác nhận</button>
+
+      <section class="summary-card" id="summaryCard">
+        <div class="summary-icon">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="summary-text">
+          <p class="summary-title">Chọn nền tảng quảng bá</p>
+          <p class="summary-desc" id="summaryDesc">
+            Bạn đã liên kết thành công 0 nền tảng
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="linked-section"
+        aria-label="Đã liên kết"
+        id="linkedList"
+      ></section>
+
+      <section class="available-section" aria-label="Chưa liên kết">
+        <h2 class="available-title">Nền tảng khác</h2>
+        <div class="available-list" id="availableList"></div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <div class="modal-sheet" id="linkModal" aria-hidden="true">
+      <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <header class="modal-head">
+          <h3 id="modalTitle">Thêm nền tảng</h3>
+          <button
+            class="icon-btn ghost"
+            id="modalClose"
+            type="button"
+            aria-label="Đóng"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </header>
+        <p class="modal-desc" id="modalDesc">
+          Vui lòng nhập đường dẫn nền tảng để tham gia chương trình tiếp thị
+          liên kết.
+        </p>
+        <div class="modal-input">
+          <i class="fa-solid fa-link"></i>
+          <input
+            id="modalInput"
+            type="url"
+            placeholder="Ví dụ https://www.youtube.com/@username"
+          />
+        </div>
+        <div class="modal-actions">
+          <button class="btn ghost" id="modalCancel" type="button">Hủy</button>
+          <button class="btn primary" id="modalConfirm" type="button">
+            Xác nhận
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="../assets/scripts/shared-application-utilities.js"></script>
-  <script src="../assets/scripts/promotion-platform-management/page-state-data-store.js"></script>
-  <script src="../assets/scripts/promotion-platform-management/backend-api-client.js"></script>
-  <script src="../assets/scripts/promotion-platform-management/business-logic-service.js"></script>
-  <script src="../assets/scripts/promotion-platform-management/ui-renderer-view.js"></script>
-  <script src="../assets/scripts/promotion-platform-management/user-event-handlers.js"></script>
-  <script src="../assets/scripts/promotion-platform-management/page-module-bootstrap.js"></script>
-</body>
+    <script src="../assets/scripts/shared-application-utilities.js"></script>
+    <script src="../assets/scripts/promotion-platform-management/page-state-data-store.js"></script>
+    <script src="../assets/scripts/promotion-platform-management/backend-api-client.js"></script>
+    <script src="../assets/scripts/promotion-platform-management/business-logic-service.js"></script>
+    <script src="../assets/scripts/promotion-platform-management/ui-renderer-view.js"></script>
+    <script src="../assets/scripts/promotion-platform-management/user-event-handlers.js"></script>
+    <script src="../assets/scripts/promotion-platform-management/page-module-bootstrap.js"></script>
+  </body>
 </html>

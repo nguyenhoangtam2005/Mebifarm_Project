@@ -93,20 +93,28 @@
 .range-row {
   margin: 10px 0px 0px 0px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 10px;
+  overflow-x: auto;
 }
 
 .range-btn {
-  border: 1px solid #dfd6cf;
+  border: 1px solid #eadfd7;
   border-radius: 18px;
-  background: #f4f1ef;
-  color: #726964;
-  font-size: 11px;
-  padding: 8px 8px;
+  background: #fff;
+  color: #4a3f39;
+  font-size: 13px;
+  padding: 12px 20px;
   font-weight: 400;
-  transition: all 0.18s ease;
-  background-color: white;  white-space: nowrap;}
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  white-space: nowrap;
+  box-shadow: 0 6px 12px rgba(18, 10, 6, 0.06);
+  width: auto;
+  min-width: 0;
+  overflow: visible;
+  text-overflow: clip;
+}
 
 .range-btn i {
   margin-right: 4px;
@@ -114,9 +122,11 @@
 
 .range-btn.active {
   border-color: #f36a22;
-  background: #fff7f1;
-  color: #e7601e;
+  background: #f36a22;
+  color: #fff;
   font-weight: 500;
+  box-shadow: 0 6px 12px rgba(18, 10, 6, 0.06);
+  transform: translateY(-1px);
 }
 
 .range-btn.select {

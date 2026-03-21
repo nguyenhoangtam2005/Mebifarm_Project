@@ -175,3 +175,13 @@
     font-size: 15px;
   }
 }
+
+
+
+/* FIX FONT AWESOME OVERRIDE */
+i[class^="fa-"],
+i[class*=" fa-"] {
+  font-family: "Font Awesome 6 Free" !important;
+  font-style: normal !important;
+  display: inline-block;
+}

@@ -74,29 +74,32 @@
 
 .tool-chip {
   --icon-line-color: currentColor;
-  border: none;
-  border-radius: 10px;
-  padding: 8px 18px;
-  background: #f16322;
-  color: #fff;
+  border: 1px solid #eadfd7;
+  border-radius: 18px;
+  padding: 12px 20px;
+  background: #fff;
+  color: #4a3f39;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: 13px;
+  box-shadow: 0 6px 12px rgba(18, 10, 6, 0.06);
 }
 
 .tool-chip.outline {
   background: #fff;
-  border: 1px solid #e4ddd9;
-  color: #6f706f;
-  font-size: 11px;
+  border: 1px solid #eadfd7;
+  color: #4a3f39;
+  font-size: 13px;
 }
 
 .tool-chip.outline.active {
-  border-color: #f16322;
-  color: #f16322;
-  font-size: 11px;
+  border-color: #f36a22;
+  color: #f36a22;
+  font-size: 13px;
+  box-shadow: 0 6px 12px rgba(18, 10, 6, 0.06);
+  transform: translateY(-1px);
 }
 
 .result-grid {
@@ -171,10 +174,17 @@
   display: grid;
   place-items: center;
   justify-self: center;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 .share-btn i {
   font-size: 15px;
+  font-weight: 400; /* ensure regular bookmark weight */
+}
+
+.share-btn:hover {
+  background: #d94f09;
 }
 
 .commission {

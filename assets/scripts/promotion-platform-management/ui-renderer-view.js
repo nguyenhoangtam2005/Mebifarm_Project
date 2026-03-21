@@ -18,9 +18,13 @@
         const node = document.createElement("article")
         node.className = "card"
         node.dataset.id = item.id
+        const isYoutube = item.id === "youtube"
+        const logoMarkup = isYoutube
+          ? '<img class="platform-logo__img" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="18" height="18" />'
+          : `<i class="${item.icon}"></i>`
         node.innerHTML = `
           <div class="card-head">
-            <div class="platform-logo" style="background:${bg}"><i class="${item.icon}"></i></div>
+            <div class="platform-logo${isYoutube ? " platform-logo--youtube" : ""}" style="background:${bg}">${logoMarkup}</div>
             <div>
               <p class="platform-title">Đã liên kết ${item.name}</p>
               <p class="platform-sub">${item.desc || "Tài khoản đã kết nối"}</p>
@@ -45,9 +49,13 @@
       if (!Data.el.availableList) return
       Data.el.availableList.innerHTML = list.map((item) => {
         const style = item.color.startsWith("linear") ? item.color : item.color
+        const isYoutube = item.id === "youtube"
+        const logoMarkup = isYoutube
+          ? '<img class="platform-logo__img" src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/youtube/default.svg" alt="YouTube" width="18" height="18" />'
+          : `<i class="${item.icon}"></i>`
         return `
           <div class="platform-chip" data-id="${item.id}">
-            <div class="platform-logo" style="background:${style}"><i class="${item.icon}"></i></div>
+            <div class="platform-logo${isYoutube ? " platform-logo--youtube" : ""}" style="background:${style}">${logoMarkup}</div>
             <div>
               <p class="platform-title">${item.name}</p>
               <p class="platform-sub">Thêm liên kết</p>

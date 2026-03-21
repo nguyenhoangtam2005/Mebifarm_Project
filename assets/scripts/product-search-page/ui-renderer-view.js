@@ -38,7 +38,7 @@
           '<p class="sold">' + item.sold + '</p>',
           '<div class="price-row">',
           '<strong>' + Service.formatPrice(item.price) + '</strong>',
-          '<button class="share-btn" type="button" aria-label="Chia se"><i class="fa-solid fa-share-nodes"></i></button>',
+          '<button class="share-btn" type="button" aria-label="Chia sẻ sản phẩm"><i class="fa-regular fa-bookmark"></i></button>',
           '</div>',
           '<p class="commission">Tỷ lệ hoa hồng: 10%</p>',
           '</div>'
