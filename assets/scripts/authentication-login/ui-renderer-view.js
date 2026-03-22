@@ -12,9 +12,8 @@
       if (!Data.el.passwordInput || !Data.el.togglePasswordBtn) return
       Data.el.passwordInput.type = isVisible ? "text" : "password"
       Data.el.togglePasswordBtn.innerHTML = isVisible
-        ? '<i class="fa-solid fa-eye"></i>'
-        : '<i class="fa-solid fa-eye-slash"></i>'
+        ? '<i class="fa-regular fa-eye"></i>'
+        : '<i class="fa-regular fa-eye-slash"></i>'
     }
   }
 })()
-

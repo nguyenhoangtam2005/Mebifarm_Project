@@ -18,9 +18,8 @@
       submitBtn: document.getElementById("submitLoginBtn"),
       togglePasswordBtn: document.getElementById("togglePasswordBtn"),
       forgotPasswordLink: document.getElementById("forgotPasswordLink"),
-      registerLink: document.getElementById("registerLink"),
-      closeLoginBtn: document.getElementById("closeLoginBtn")
+      registerLink: null,
+      closeLoginBtn: null
     }
   }
 })()
-

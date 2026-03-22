@@ -16,7 +16,9 @@
   gap: 8px;
   background: #fff;
   border-bottom: 1px solid #e9e4e2;
-  padding: 10px 2px;
+  padding: 10px 10px;
+  margin: 0 -10px 6px;
+  width: calc(100% + 20px);
 }
 
 .header-back {
@@ -97,7 +99,10 @@
   grid-auto-columns: max-content;
   gap: 10px;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+.range-row::-webkit-scrollbar { display: none; }
 
 .range-btn {
   border: 1px solid #eadfd7;
@@ -173,6 +178,10 @@
   display: grid;
   place-items: center;
   font-size: 11px;
+}
+.metric-ico svg {
+  width: 14px;
+  height: 14px;
 }
 
 .metric-ico.purple { background: #f0e3ff; color: #9f4cff; }

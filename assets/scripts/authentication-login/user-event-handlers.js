@@ -41,17 +41,6 @@
         event.preventDefault()
         showToast("Liên hệ quản trị để cấp lại mật khẩu")
       })
-
-      Data.el.registerLink?.addEventListener("click", (event) => {
-        event.preventDefault()
-        showToast("Vui lòng liên hệ quản trị để đăng ký CTV")
-      })
-
-      Data.el.closeLoginBtn?.addEventListener("click", () => {
-        if (window.history.length > 1) { window.history.back(); return }
-        showToast("Vui lòng đăng nhập để tiếp tục")
-      })
     }
   }
 })()
-
