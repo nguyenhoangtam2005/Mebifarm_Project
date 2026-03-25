@@ -19,7 +19,7 @@
 .material-symbols-rounded {
   font-family: "Material Symbols Rounded";
   font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -28,7 +28,7 @@
 
 body {
   min-height: 100vh;
-  color: var(--text-main);
+  color: wh;
   background: radial-gradient(circle at 20% 0%, rgba(16, 185, 129, 0.08), transparent 30%),
     radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.08), transparent 28%),
     linear-gradient(180deg, var(--bg-grad-start), var(--bg-grad-end));
@@ -60,12 +60,11 @@ body {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  border: 1px solid rgba(243, 106, 34, 0.18);
+  border: none;
   background: #fff;
   color: #f36a22;
   display: grid;
   place-items: center;
-  box-shadow: 0 8px 16px rgba(243, 106, 34, 0.1);
   cursor: pointer;
 }
 
@@ -79,12 +78,12 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 26px 8px 6px;
+  padding: 18px 8px 6px;
 }
 
 .hero-icon {
-  width: 72px;
-  height: 72px;
+  width: 52px;
+  height: 52px;
   border-radius: 20px;
   background: linear-gradient(145deg, #e8fff4, #dff9f0);
   color: #0aa06f;
@@ -98,12 +97,12 @@ body {
 .hero-icon .material-symbols-rounded {
   font-family: "Material Symbols Rounded";
   font-variation-settings: "wght" 700, "opsz" 24;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .hero h2 {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.35;
 }
 
@@ -113,23 +112,23 @@ body {
   font-size: 14px;
   color: #95a6bf;
   line-height: 1.6;
+  font-weight: 100;
 }
 
 /* POLICY LIST */
 .policy-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
   margin-top: 12px;
 }
 
 .policy-card {
   display: flex;
   gap: 14px;
-  padding: 18px 16px;
+  padding: 18px 18px;
   border-radius: 18px;
   background: var(--surface);
-  box-shadow: var(--card-shadow);
   border: 1px solid rgba(148, 163, 184, 0.16);
   margin-inline: 0;
   align-items: center;
@@ -138,16 +137,21 @@ body {
 .policy-icon {
   width: 52px;
   height: 52px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  color: #0f172a;
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+
+  min-width: 52px;
+  flex-shrink: 0;
+
+  border-radius: 12px;       /* bo góc */
+  display: flex;             /* căn giữa */
+  align-items: center;       /* giữa theo chiều dọc */
+  justify-content: center;   /* giữa theo chiều ngang */
 }
 
 .green {
   background: radial-gradient(120% 120% at 50% 50%, rgba(16, 185, 129, 0.32) 0%, rgba(16, 185, 129, 0.12) 55%, rgba(16, 185, 129, 0.04) 100%);
   color: #0ea668;
+  width: 52px;
+  height: 52px;
 }
 
 .blue {
@@ -171,15 +175,15 @@ body {
 }
 
 .policy-title {
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 
 .policy-desc {
   font-size: 14px;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* FOOTER */
@@ -191,19 +195,20 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 18px 0 22px;
+  padding: 18px  22px;
   background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.8) 40%, #fff 100%);
 }
 
 .btn-primary {
   width: 100%;
   max-width: 430px;
-  padding: 15px;
+  padding: 14px;
   border-radius: 16px;
   border: none;
-  background: var(--navy);
+  background : #f36a22;  
+  ;
   color: #fff;
-  font-weight: 800;
+  font-weight: 200;
   font-size: 15px;
   letter-spacing: 0.1px;
   box-shadow: 0 16px 32px rgba(15, 23, 42, 0.28);
