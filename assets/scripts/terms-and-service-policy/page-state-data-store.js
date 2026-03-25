@@ -29,7 +29,8 @@
     el: {
       toast: document.getElementById("toast"),
       backBtn: document.getElementById("policyBack"),
-      content: document.getElementById("policyContent")
+      content: document.getElementById("policyContent"),
+      agreeBtn: document.getElementById("policyAgree")
     }
   }
 })()

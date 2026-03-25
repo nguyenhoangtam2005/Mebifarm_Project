@@ -14,11 +14,17 @@
           window.location.assign("./account-profile-management-center.html")
         }
       })
+    },
+    bindAgreement() {
+      Data.el.agreeBtn?.addEventListener("click", () => {
+        API.redirectToAccountOverview()
+      })
     }
   }
 
   module.Event.bindAll = function () {
     module.Event.bindBack()
+    module.Event.bindAgreement()
   }
 })()
 

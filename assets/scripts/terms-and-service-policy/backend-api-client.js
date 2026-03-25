@@ -8,7 +8,9 @@
     },
     redirectToLogin() {
       window.location.assign("./authentication-sign-in-portal.html")
+    },
+    redirectToAccountOverview() {
+      window.location.assign("./account-profile-management-center.html")
     }
   }
 })()
-
